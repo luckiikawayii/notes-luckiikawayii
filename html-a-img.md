@@ -48,4 +48,4 @@
 -      上一级：../
 - 7.链接格式：`<a href="转跳目标" target="目标窗口弹出方式"> 文本或图像</a>`
   - target 打开窗口的方式默认是`_self`当前窗口打开页面 ` _blank`新窗口打开
-- 8.git reset --hard origin/main  丢掉修改
+- 8.`git reset --hard origin/main`  丢掉修改

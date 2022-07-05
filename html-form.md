@@ -13,11 +13,11 @@
 -  第一行是以th开头的表头单元格   
 -  第二行是以td开头的普通单元格
 
-```
-- <table>
--     <tr><td>xxx</td>    <td>xxx</td>   <td>xxx</td></tr>
--     <tr><td>xxx</td>    <td>xxx</td>   <td>xxx</td></tr>
-- </table>
+```html
+ <table>
+    <tr><td>xxx</td>    <td>xxx</td>   <td>xxx</td></tr>
+    <tr><td>xxx</td>    <td>xxx</td>   <td>xxx</td></tr>
+ </table>
 ```
 
 ## 2.表格属性（属性要写到表格标签table里面）
@@ -28,7 +28,7 @@
 ## 4.列表标签(布局)
 -  无序列表（没有顺序,有小点，`<ul>`里面只能放`<li>`,`<li>`里面可以放别的标签）
   
-```
+```html
   <ul>
      <li>列表1</li>
     <li>列表2</li>
@@ -36,16 +36,16 @@
 ```
 ## 5.有序列表（有顺序,`<ol>`只能放`<li>`,`<li>`里面能放别的标签）
 
-···
+```html
   <ol>
    <li>列表1</li>
    <li>列表2</li>
   </ol>
-···
+```
 
 ## 6.自定义列表（`<dl>`里面只能放`<dt>` `<dd>`,一个`<dt>`对应多个`<dd>`，）
 
-···
+```html
   <dl>
      <dt>xxx</dl>
      <dd>解释1</dd>

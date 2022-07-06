@@ -26,12 +26,15 @@
 
 - 多行输入文本框:`<textarea>`
 - cols: 每行字数   rows: 显示的行数
+
 ```
    <textarea rows="x" cols="x">
 
      文本内容
 
    </textarea>
-```  
+```
+
+ 
 
   

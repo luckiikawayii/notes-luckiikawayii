@@ -12,9 +12,9 @@
 
 - 内边距:padding设置边框与内容之间的距离
 - 复合写法：（顺时针）
-`padding：5px` (上下左右都是5像素)
-`padding：5px 10px` (上下5像素，左右10像素)
-`padding: 5px 10px 15px` （上5像素，左右10像素，下15像素）
-`padding: 5px 10px 15px 20px ` （上5像素，右10像素，下15像素，左20像素）
+- `padding：5px` (上下左右都是5像素)
+- `padding：5px 10px` (上下5像素，左右10像素)
+- `padding: 5px 10px 15px` （上5像素，左右10像素，下15像素）
+- `padding: 5px 10px 15px 20px ` （上5像素，右10像素，下15像素，左20像素）
 - 若要效果图片大小保持一致，要让width/height减去多出来的内边距
 - 如果盒子没有指定width/height属性，此时padding与盒子一样大

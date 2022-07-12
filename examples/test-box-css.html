@@ -6,21 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      .red {
-        width: 200px;
-        height: 200px;
-        background-color: red;
+      * {
+        margin: 0;
+        padding: 0;
       }
-      .green {
-        width: 200px;
-        height: 200px;
-        background-color: green;
+        .box {
+          width: 300px;
+        height: 415px;
+        margin: 100px auto;
+        background-color:pink;
+      }
+      .box img {
+        width: 100%;
+      }
+      .review {
+        font-size: 14px;
+        height: 70px;
+        padding: 0 28px;
+        margin: 14px;
+      }
+      .appraise {
+        font-size: 12px;
+        color: gray;
+        margin-top: 20px;
+        padding: 0 45px
+      }
+      .bottom {
+        font-size: 14px;     
+        margin-top: 15px;
+        padding: 0 40px
+      }
+      .bottom h4 {
+        display: inline-block;
+        font-weight: 400;
+      }
+      .bottom span {
+        color: orange;
+      }
+      .bottom em{
+        font-style: normal;
+        color: blue;
+        display: inline-block;
+        margin: o 6px 0 10px;
+      }
+      a {
+       text-decoration: none;
+       color: black;
+
       }
     </style>
   </head>
   <body>
-    <div class="red">红色</div>
-    <div class="green">绿色</div>
-    <div class="red">红色</div>
+    <div class="box">
+      <a href="#"><img src="../images/img.jpg"></img></a>
+      <p class="review"><a href="#">快递牛，整体不错蓝牙可以秒连。红米给力</a></p>
+      <div class="appraise">来自12345678的评价</div>
+      <div class="bottom">
+        <h4><a href="#">redmi airdots真无线蓝...</a></h4> 
+        <em>|</em>
+        <span> 99.9元</span>
+      </div>
+    
   </body>
 </html>

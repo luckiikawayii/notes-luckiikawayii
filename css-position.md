@@ -1,6 +1,6 @@
 # 一.
 - 1. 今天做的一个案例，想把两张图片用定位的方法放到一起，跟大的图片用了相对定位，小的用了绝对定位，但是两张并没有叠放
-- https://codepen.io/pen/
+-  https://codepen.io/luckiikawayii/pen/NWYRLRo
 
 ## 二. 圆角边框： 
 

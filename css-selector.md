@@ -35,6 +35,7 @@
   <body>  
    <div class='red'>xxx</div>
   </body> 
+  后代选择器的后代要在一个标签里面
 ```
 
 -  多类名

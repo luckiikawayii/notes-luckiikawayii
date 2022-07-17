@@ -31,4 +31,4 @@
 -         eg.<p style="color: red; font-size: 20px>xxxxxxxx</p>    （部分结构样式分离，控制一个标签）
 - 5. 外部样式表：建立后缀名css文件，再把css文件引入html页面中   （结构样式完全分离，控制多个页面）
 -  语法<link rel="stylesheet" href="文件名“>   
--  6.command➕/等于注释，不生效     
+-  6.command+/等于注释，不生效     

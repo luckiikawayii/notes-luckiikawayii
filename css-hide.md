@@ -11,16 +11,4 @@
 - 显示溢出部分： overflow:visible
 - 溢出部分显示滚动条，不溢出也显示滚动条： overflow:scroll
 - 溢出的时候才显示滚动条，不溢出不显示： overflow:auto
-- # 二.flex布局
-- 原理：通过给父盒子添加flex属性，控制盒子的位置和排列顺序
-- 1.flex-direction: 设置主轴方向
--   默认的主轴是x轴，即flex-direction: row
--   默认侧轴是y轴，元素是跟着主轴来排列的
--   flex-direction：设置谁，谁为主轴
--   row: 从左往右  row-reverse: 从右往左  column：从上到下  column-reverse: 从上到下
-- 2.justify-content: 设置主轴上子元素的排列方式
--   默认主轴为x轴的情况  flex-start: 从左往右  flex-end: 从右往左  center: 主轴居中对齐  space-around: 平分剩余空间  space-between: 先两边贴边，再平分剩余空间
-- 3.flex-wrap: 设置子元素是否换行
-- 4.align-content: 设置侧轴上的子元素排列方式（多行）
-- 5.align-items: 设置侧轴上的子元素排列方式 （单行）
-- 6.flex-flow: （复合属性）相当于同时设置了flex-direction, flex-wrap
+- 

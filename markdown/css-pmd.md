@@ -1,0 +1,29 @@
+# 一. 移动端
+- 1. 视口
+- 布局视口layout viewport: 元素看上去很小，默认手动放大
+- 视觉视口visual viewport: 看到的网站的区域，可以缩放但是不改变布局视口，仍保持原来的宽度
+-  理想视口ideal viewport: 手动添写meta视口标签通知浏览器，手机屏幕与布局视口宽度相等
+- 2. 像素
+- px : 物理像素比或屏幕像素比
+- pc端 ：1px=1个物理像素
+- 移动端 ：1px不一定为1个物理像素
+- 3. 二倍图
+- 原理：先把目标图像像素放大一倍，然后再将图像的宽高缩小一倍
+- 4. background-size属性
+- cover: 完全覆盖盒子，可能有部分背景图片显示不出来
+- contain: 当宽或高达到盒子最大值时图片停止放大，可能有部分空白区域
+- 只写一个参数时为宽度，高度会等比缩放
+- 单位为%时，宽度相当于父盒子缩放
+- 5. 方案
+- 单独制作移动端页面： 根据设备区分，网址域前加m(mobile)可打开移动端
+- 响应式页面兼容移动端： 通过判断屏幕宽度来改变样式，需要调兼容性问题
+- 6. css3样式
+- css初始化： normalize.css
+- 盒子模型：传统盒子模型宽度= css中设置的width+ border+ padding  (box-sizing: content-box) (pc端完全需要兼容，就用传统模式)
+-         css3盒子模型宽度=css里面的width包含border, padding  (box-sizing: border-box)
+- 移动端浏览器清除高亮： -webkit-tap-highlight-color: transparent        
+- 移动端浏览器给按钮和输入框自定义样式：-webkit-appearance: none
+- 静止长按页面跳出菜单： -webkit-touch-callout: none
+- 7. 流式布局
+- 定义：通过把盒子的宽度设置成百分比来根据屏幕的宽度伸缩 eg.width: 50%
+- max-width, min-width

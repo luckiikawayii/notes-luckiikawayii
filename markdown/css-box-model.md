@@ -24,7 +24,7 @@
 - 清除内边距：padding: 0
   ## 三. 外边距
 - margin外边距：与padding用法一致
-- 居中对齐：eg.margin: 100px auto  (盒子必须有宽度，块级元素，左右外边距都设置auto)
+- 居中对齐：eg.margin: 0 auto  (盒子必须有宽度，块级元素，左右外边距都设置auto)
 - 行内元素或行内块元素居中：给其父元素添加text-align: center
 - 清除外边距：margin: 0
 - 行内元素只用设置左右内外边框，块级元素和行内块元素都设置

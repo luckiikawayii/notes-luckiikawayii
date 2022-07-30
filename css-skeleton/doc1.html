@@ -111,7 +111,326 @@
          <p>
             喜欢skeleton和想要推广它，分享它或者star，我欣赏这样的做法
          </p>
+         <a class="twitter-share-button" href="#" data-url="#" data-text="一个非常简单的，反应迅速的样板" data-via="dhg"
+         data-related="dhg">Tweet
+          <!-- data URL允许内容的创建者将小文件嵌入在documents中 -->
+         </a>
+         <iframe
+          src="#"
+          allowtransparency="true"
+          frameborder="0"
+          scrolling="0"
+          width="110"
+          height="20"
+        ></iframe>
+        <iframe
+          src="#"
+          allowtransparency="true"
+          frameborder="0"
+          scrolling="0"
+          width="110"
+          height="20"
+        ></iframe>
+          <!-- <iframe> 标签常用属性介绍:height可以设置框架显示的高度，width可以设置框架显示的宽度，name可以定义框架的名称，frameborder用来定义是否需要显示边框， 
+          取值为1表示需要边框，scrolling用来设置框架是否需要滚动条，取值可以是yes,no,autosrc用于设置框架的地址，可以使页面地址，也可以是图片地址align用于设置元素对齐方式
+          取值可以是left，right，top，middle，bottom -->         
        </div>
+        <!-- Grid -->
+       <div class="docs-section" id="grid">
+         <h3 class="docs-header">The grid</h3>
+         <p>
+          The grid 是一个最大宽度为960px的12列能移动的网格，随着浏览器或设备尺寸减小而缩小，最大宽度可以用一行css改变，并且所有的列都将相应的调整大小，语法很简单并且它更容易
+          迅速反应编码，开始调整浏览器
+         </p> 
+         <div class="example-grid docs-example">
+           <div class="row">
+             <div class="one column">one</div>
+             <div class="eleven columns">eleven</div>
+           </div>
+           <div class="row">
+            <div class="two columns">two</div>
+            <div class="ten columns">ten</div>
+          </div>
+          <div class="row">
+            <div class="three columns">three</div>
+            <div class="nine columns">nine</div>
+          </div>
+          <div class="row">
+            <div class="four columns">four</div>
+            <div class="eight columns">eight</div>
+          </div>
+          <div class="row">
+            <div class="five columns">five</div>
+            <div class="seven columns">seven</div>
+          </div>
+          <div class="row">
+            <div class="six columns">six</div>
+            <div class="six columns">six</div>
+          </div>
+          <div class="row">
+            <div class="seven columns">seven</div>
+            <div class="five columns">five</div>
+          </div>
+          <div class="row">
+            <div class="eight columns">eight</div>
+            <div class="four columns">four</div>
+          </div>
+          <div class="row">
+            <div class="nine columns">nine</div>
+            <div class="three columns">three</div>
+          </div>
+          <div class="row">
+            <div class="ten columns">ten</div>
+            <div class="two columns">two</div>
+          </div>
+          <div class="row">
+            <div class="eleven columns">eleven</div>
+            <div class="one column">One</div>
+          </div>
+         </div>
+       </div>
+       <div class="docs-section" id="typography">
+        <h3 class="docs-header">Typography</h3>
+        <p>
+          类型都是用<code></code>设置的，所以字体大小和空间关系可以以 <code>&lt;html&gt;</code> 为基础字体大小来响应大小，开箱即用，skeleton从不改变
+          <code>&lt;html&gt;</code> 字体大小，万一你需要在你的项目上面用到它，所有的尺寸都是以10为基础，code>&lt;h1&gt;</code> 以5.0rem字体大小就意味着50px
+        </p>
+        <div class="docs-example">
+          <div class="row">
+            <div class="six columns">
+              <p>
+                <strong>typography基础</strong>
+                <a href="#">Raleway</a>
+                由google提供，设置在15rem (15px)到1.6 行高（24px)，其他类型的像<a href="#">anchors</a>,<strong>strong</strong>, <em>emphasis</em>, 和
+                <u>underline</u>，显然的都包含在内              
+             </p>
+             <p>
+              <strong>Headings</strong>创建一个大小不同的系列，每个家族都有特定的<code>letter-spacing</code>,<code>line-height</code>,和<code>margins</code>.         
+             </p>
+            </div>
+            <div class="six columns">
+             <h1>
+              Heading<span class="heading-font-size">
+                <code>&lt;h1&gt;</code> 50rem</span>
+             </h1>
+             <h2>
+               Heading<span class="heading-font-size">
+               <code>&lt;h2&gt;</code> 42rem</span>                
+             </h2>
+             <h3>
+               Heading<span class="heading-font-size">
+               <code>&lt;h3&gt;</code> 36rem</span>                 
+             </h3>
+             <h4>
+               Heading<span class="heading-font-size">
+               <code>&lt;h4&gt;</code> 30rem</span>                
+             </h4>
+             <h5>
+               Heading<span class="heading-font-size">
+               <code>&lt;h5&gt;</code> 24rem</span>                 
+             </h5>
+             <h6>
+               Heading<span class="heading-font-size">
+               <code>&lt;h6&gt;</code> 15rem</span>                 
+             </h6>             
+            </div>
+          </div>
+        </div>          
+       </div>
+        <!-- Buttons -->      
+        <div class="docs-section" id="buttons">
+          <h3 class="docs-header">Buttons</h3> 
+          <p>
+           在skeleton中，buttons有两种基本样式，标准的<code>&lt;button&gt;</code> 样式是普通的，而<code>.button-primary</code>按钮则是充满活力和突出的，
+           按钮样式应用于许多适当的表单元素，但也可以使用<code>.button</code>类任意附加到锚点
+          </p>
+          <div class="docs-example">
+            <div>
+              <a class="button" href="#">Anchor button</a>
+              <button>Button element</button>
+              <input type="submit" value="submit input" />
+              <input type="button" value="button input" />
+            </div>
+            <div>
+              <a class="button button-primary" href="#">Anchor button</a>
+              <button class="button-primary">Button element</button>
+              <input class="button-primary" type="submit" value="submit input" />
+              <input class="button-primary" type="button" value="button input" />
+            </div>
+          </div>
+        </div>
+        <!-- Forms -->
+      <div class="docs-section" id="forms">
+        <h3 class="docs-header">Forms</h3>
+        <p>
+         forms是一个巨大的麻烦，但希望这些样式使它更容易一点，所有输入选择和按钮都被规范为跨浏览器的通用高度，因此输入可以互相堆叠或放置 
+        </p>
+        <div class="docs-example docs-example-forms">
+          <form>
+            <div class="row">
+              <div class="six columns">
+                <label for="exampleEmailInput">你的电子邮件</label>
+                <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput"/>               
+              </div>
+              <div class="six columns">
+                <label for="exampleRecipientInput">联系的原因</label>
+                <select class="u-full-width" id="exampleRecipientInput">
+                  <option value="Option 1">问题</option>
+                  <option value="Option 2">欣赏</option>
+                  <option value="Option 3">我有你的电话号码吗?</option>
+                </select>
+                <label for="exampleMessage">消息</label>
+            <textarea
+              class="u-full-width"
+              placeholder="Hi Dave &hellip;"
+              id="exampleMessage">
+            </textarea>
+            <label class="example-send-yourself-copy">
+              <input type="checkbox" />
+              <span class="label-body">发送一份副本给自己</span>
+            </label>
+            <input class="button-primary" type="submit" value="Submit" />
+              </div>
+          </form>
+        </div>
+      </div>
+      <!-- Lists -->
+      <div class="docs-section" id="lists">
+        <h3 class="docs-header">Lists</h3>
+        <div class="row docs-example">
+          <div class="six columns">
+            <ul>
+              <li>无序列表有基本样式</li>
+              <li>
+                它们使用圆列表样式
+                <ul>
+                  <li>感觉设计成嵌套样式列表</li>
+                  <li>可以把任意一种类型的列表嵌套到另一种</li>
+                </ul>
+              </li>
+              <li>只是更多的列表项目mama san</li>
+            </ul>
+          </div>  
+          <div class="six columns">
+            <ol>
+              <li>有序列表也有基本样式</li>
+              <li>它们使用十进制列表样式
+                <ul>
+                  <li>有序和无序可以嵌套</li>
+                  <li>可以将任意一种列表嵌套到另一种</li>
+                </ul>
+              </li>
+              <li>最后一个列表项目只是兴趣</li>
+            </ol>
+          </div>
+        </div>  
+      </div> 
+       <!-- Code -->
+       <div class="docs-section" id="code">
+        <h3 class="docs-header">Code</h3>
+        <p>
+          代码保持基本样式，只要把任何东西包装在一个<code>&lt;code&gt;</code>里，它会出现像<code>this</code>，对于代码块，将<code>&lt;code&gt;</code>
+          包装在<code>&lt;pre&gt;</code>里
+        </p>
+        <div class="docs-example">
+          <pre><code>.some-class {
+            background-color: red;
+          }</code></pre>
+        </div>
+       </div>
+       <!-- Tables -->
+       <div class="docs-section" id="tables">
+        <h3 class="docs-header">Tables</h3>
+        <p>
+          在构建<code>table</code>时，一定要使用正确的<code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code>
+        </p>
+        <div class="docs-example">
+          <table class="u-full-width">
+            <thead>
+              <tr>
+                <th>名字</th>
+                <th>年龄</th>
+                <th>性别</th>
+                <th>地址</th>
+              </tr>
+              </tbody>
+              <tr>
+                <td>Dave Gamache</td>
+                <td>26</td>
+                <td>Male</td>
+                <td>San Francisco</td>
+              </tr>
+              <tr>
+                <td>Dwayne Johnson</td>
+                <td>42</td>
+                <td>Male</td>
+                <td>Hayward</td>
+              </tr>
+              <tbody>
+            </thead>
+        </table>
+       </div>
+      </div>
+      <!-- Queries -->    
+      <div class="docs-section" id="queries">
+        <h6 class="docs-header">Media queries</h6>
+        <p>
+          skeleton使用媒体查询来服务它的可伸缩网格，但也有一个查询列表，以方便设备对站点进行样式话，这些查询是移动优先的，这意味着它们的目标是<code>min-width</code>，
+          移动优先查询是如何构建的，这是组织css的首选方法，这意味着查询之外的所有样式都适用于所有设备，然后针对更大的设备进行增强，这可以防治小型设备解析大量未使用的css，
+          查询大小如下
+        </p>
+        <div class="docs-example row">
+          <div class="six columns">
+            <ul>
+              <li><strong>桌面高清</strong>: 1200px</li>
+              <li><strong>桌面</strong>: 1000px</li>
+              <li><strong>平板电脑</strong>: 750px</li>
+            </ul>          
+          </div>
+          <div class="six columns">
+            <ul>
+              <li><strong>平板手机</strong>: 550px</li>
+              <li><strong>手机</strong>: 400px</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+       <!-- Utilities and Misc. -->
+       <div class="docs-section" id="utilities">
+        <h6 class="docs-header">Utilities</h6>
+        <p>
+          skeleton有许多小的实用类型，它们充当简单使用的助手，有时候使用一个实用程序类比创建一个全新的类型来浮动一个元素要好
+        </p>
+       </div>
+       <!-- Examples -->
+      <div class="docs-section examples" id="examples">
+        <h3 class="docs-header">Examples</h3>
+        <div class="row example">         
+          <a class="example-screenshot-wrapper" target="_blank" href="#">
+          <img class="example-screenshot" src="#" />
+          </a>
+          <div class="one-half offset-by-one-half column">
+            <h3 class="example-header">登陆页面小样</h3>    
+            <p>
+            这个模版是一个关于怎样简单的去只用skeleton网格和一些自定义的样式创建一个登录页面，整个小样大约有150行css代码，包括注释（其中大部分是将手机定位在顶部）          
+            </p>   
+            <a class="button" href="#" target="_blank">Demo</a>
+            <a class="button" href="#" target="_blank" >Source</a>             
+        </div>
+      </div>
+      <div class="row example">
+        <div class="example-screenshot-wrapper">
+          <div class="example-screenshot coming-soon"></div>
+        </div>
+        <div class="one-half offset-by-one-half column">
+          <h3 class="example-header">更多信息即将发布!</h3>
+          <p class="example-description">
+            更多例子将被添加，来帮助任何人开始或更熟悉如何用skeleton工作，目标是教育，如果你真的更感兴趣，skeleton网站关于生活的例子，我很快会建立一个Built on Skeleton
+            的列表
+          </p>
+        </div>
+      </div>
+      </div>
     </div>
    </div>
   </body>

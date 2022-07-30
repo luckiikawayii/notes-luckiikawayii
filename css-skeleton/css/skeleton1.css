@@ -34,4 +34,9 @@ margin-left: 0; }
     .value-prop four columns {
         margin-left: 4%;
     }
-}
+    .one.column,.one.columns {
+        width: 4.66%;
+    }
+    } 
+    
+    

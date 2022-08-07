@@ -1,7 +1,7 @@
 - https://codepen.io/luckiikawayii/pen/yLKgPvv
 # 一. 隐藏
-- 1.dispaly
-- 隐藏： dispaly: none （隐藏元素后，不占用原来的位置）
+- 1.display
+- 隐藏： display: none （隐藏元素后，不占用原来的位置）
 - 显示:  display: block
 - 2.visibility
 - 隐藏： visibility:hidden (隐藏原来的元素后，继续占有原来的位置 )

@@ -11,7 +11,21 @@
   - https://github.com/dhg/Skeleton
   - https://github.com/uptonking/pico-css-v1-2-1
     - https://github.com/picocss/pico
+# 0808
 
+- js开发要点
+  - 基本语法
+  - 常用dom操作方法/api
+  - js库，如jquery
+  - to-do-list练习简单项目、模版项目
+  - react流行项目
+  - echarts 练习复杂项目，学习主流项目源码
+  - 练习针对找实习或找工作的算法
+
+- [如何循序渐进、有效地学习JavaScript？](https://www.zhihu.com/question/19713563)
+  - 在dev tools => console里直接练习熟悉基本语法，变量...
+
+# 0805
 - 使用 sass 生成 css
   - 可维护性更好
   - 积累模版

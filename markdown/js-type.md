@@ -80,3 +80,5 @@
 -        console.log('数字‘- ’数字‘)
 
 - 4. 转换成布尔型
+- 其他类型转换成布尔值  方法：Boolean()函数
+- 注意：像“0，null, NaN, undefined"等代表空，否定的值会被转换成false, 其余的值会转换成true

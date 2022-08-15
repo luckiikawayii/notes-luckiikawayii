@@ -55,6 +55,18 @@
   - [CSS 变量教程 - 阮一峰](https://www.ruanyifeng.com/blog/2017/05/css-variables.html)
   - [使用 CSS 自定义属性（变量）](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Using_CSS_custom_properties)
 
+
+# 0815
+
+- js基础 数据类型、运算符operator、表达式、流程控制
+  - 新的数据类型，bigint
+  - typeof
+  - 流程控制：顺序、选择、循环
+  - if使用场景，切换主题
+    - https://codepen.io/uptonking/pen/xxWzYJq
+  - 循环使用场景，批量生成html元素
+    - https://codepen.io/uptonking/pen/LYdpPBW
+
 # 0723
 
 - 学习安排-1week

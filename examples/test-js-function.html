@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      {
+        function getMax(num1, num2) {
+          // if (num1 > num2) {
+          //   return num1;
+          // } else {
+          //   return num2;
+          // }
+          // 三元运算符
+          return num1 > num2 ? num1 : num2;
+        }
+        console.log(getMax(1, 4));
+      }
+      {
+        // 求数组里面的最大值;
+        function getArrMax(arr) {
+          let max = arr[0];
+          for (let i = 1; i <= arr.length; i++) {
+            if (arr[i] > max) {
+              max = arr[i];
+            }
+          }
+          return max;
+        }
+        let re = getArrMax([3, 77, 101, 67, 77]);
+        console.log(re);
+      }
+      {
+        // 用arguments求任意个数的最大值;
+        function getMax() {
+          let max = arguments[0];
+          for (var i = 1; i < arguments.length; i++) {
+            if (arguments[i] > max) {
+              max = arguments[i];
+            }
+          }
+          return max;
+        }
+        console.log(getMax(11, 22, 33, 44, 55));
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function Computer(color, weight, type) {
+        this.color = color;
+        this.weight = weight;
+        this.type = type;
+        this.action = function (doing) {
+          console.log(doing);
+        };
+      }
+      let play = new Computer("灰色", "1千克", "mac");
+      console.log(play);
+      play.action("看视频");
+    </script>
+  </head>
+  <body></body>
+</html>

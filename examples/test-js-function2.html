@@ -5,7 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script></script>
+    <script>
+      // 判断闰年
+      function runYear(year) {
+        let flag = false;
+        if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+          flag = true;
+        }
+        return flag;
+      }
+      console.log(runYear(2000));
+      console.log(runYear(1999));
+
+      // 输出2月份天数
+      function backDay() {
+        let year = prompt("请输入年份");
+        if (runYear(year)) {
+          alert("当前是闰年2月份，有29天");
+        } else {
+          alert("当年是平年2月份，有28天");
+        }
+      }
+      backDay();
+    </script>
   </head>
   <body></body>
 </html>

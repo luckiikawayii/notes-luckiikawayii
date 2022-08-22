@@ -6,30 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script>
-      // 用Math求最大值
-      let myMath = {
-        PI: 3.1415926,
-        max: function () {
-          let max = arguments[0];
-          for (let i = 1; i < arguments.length; i++) {
-            if (arguments[i] > max) {
-              max = arguments[i];
+      {
+        // 用Math求最大值
+        let myMath = {
+          PI: 3.1415926,
+          max: function () {
+            let max = arguments[0];
+            for (let i = 1; i < arguments.length; i++) {
+              if (arguments[i] > max) {
+                max = arguments[i];
+              }
             }
-          }
-          return max;
-        },
-        min: function () {
-          let min = arguments[0];
-          for (let i = 1; i < arguments.length; i++) {
-            if (arguments[i] < min) {
-              min = arguments[i];
+            return max;
+          },
+          min: function () {
+            let min = arguments[0];
+            for (let i = 1; i < arguments.length; i++) {
+              if (arguments[i] < min) {
+                min = arguments[i];
+              }
             }
+            return min;
+          },
+        };
+        console.log(myMath.max(1, 2, 3, 4));
+        console.log(myMath.min(1, 2, 3, 4));
+      }
+      {
+        // 猜数字
+        function getRandom(min, max) {
+          return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        let random = getRandom(1, 10);
+        while (true) {
+          let num = prompt("你来猜?1~10里面输入一个数字");
+          if (num > random) {
+            alert("你猜大了");
+          } else if (num < random) {
+            alert("你猜小了");
+          } else {
+            alert("你猜对了");
+            break;
           }
-          return min;
-        },
-      };
-      console.log(myMath.max(1, 2, 3, 4));
-      console.log(myMath.min(1, 2, 3, 4));
+        }
+      }
+      {
+        let date = new Date();
+        console.log(date);
+      }
     </script>
   </head>
   <body></body>

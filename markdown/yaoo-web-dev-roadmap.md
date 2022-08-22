@@ -42,6 +42,83 @@
 - [如何循序渐进、有效地学习JavaScript？](https://www.zhihu.com/question/19713563)
   - 在dev tools => console里直接练习熟悉基本语法，变量...
 
+
+# 0822
+
+- lesson-luckiikawayii-js基础 - 数组、对象、函数
+- 数组常用方法
+
+```JS
+arr1 = [11, 22, 33];
+
+arr2 = new Array();
+arr2.push(11, 22, 33)
+```
+
+- 对象理解
+  - 内置对象
+  - 创建可复用的对象不要使用构造函数 new FuncName 的形式
+
+```JS
+obj1 = { p1: 11, p2: 22 };
+
+obj2 = new Object();
+obj2.p1 = 11;
+obj2.p2 = 22;
+
+function createObj(name, age) {
+
+  return {
+    name: name,
+    age: age
+  }
+}
+```
+
+- 函数理解
+  - 函数里面不要用this，因为指向不明确
+  - 多用箭头函数，没有自己的this
+
+```JS
+function fn1(text) {
+  console.log('; 打印', text);
+  return text;
+}
+
+const fn2 = function(text) {
+  console.log('; 打印', text);
+  return text;
+}
+
+const fn3 = (text) => {
+  console.log('; 打印', text);
+  return text;
+}
+
+let sum = (a, b) => a + b;
+// 等价于
+let sum = function(a, b) {
+  return a + b;
+};
+
+let sum2 = (a, b) => () => a + b;
+
+fn1('hello');
+fn2('hello');
+```
+
+# 0815
+
+- js基础 数据类型、运算符operator、表达式、流程控制
+  - 新的数据类型，bigint
+  - typeof
+  - 流程控制：顺序、选择、循环
+  - if使用场景，切换主题
+    - https://codepen.io/uptonking/pen/xxWzYJq
+  - 循环使用场景，批量生成html元素
+    - https://codepen.io/uptonking/pen/LYdpPBW
+
+
 # 0805
 - 使用 sass 生成 css
   - 可维护性更好
@@ -56,16 +133,6 @@
   - [使用 CSS 自定义属性（变量）](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Using_CSS_custom_properties)
 
 
-# 0815
-
-- js基础 数据类型、运算符operator、表达式、流程控制
-  - 新的数据类型，bigint
-  - typeof
-  - 流程控制：顺序、选择、循环
-  - if使用场景，切换主题
-    - https://codepen.io/uptonking/pen/xxWzYJq
-  - 循环使用场景，批量生成html元素
-    - https://codepen.io/uptonking/pen/LYdpPBW
 
 # 0723
 

@@ -43,6 +43,45 @@
         let re = getMax([4, 2, 7, 1, 8]);
         console.log(re);
       }
+      {
+        function getMax(arr) {
+          let max = arr[0];
+          for (let i = 1; i <= arr.length; i++) {
+            if (arr[i] > max) {
+              max = arr[i];
+            }
+          }
+          return max;
+        }
+        let re = getMax([3, 4, 5]);
+        alert(re);
+      }
+      {
+        // 判断素数
+
+        function su(num) {
+          let su = prompt("输入数字");
+          if (num % 1 == num && num % num == 1) {
+            alert("该数字是素数");
+          } else {
+            alert("该数字不是素数");
+          }
+        }
+        su();
+      }
+      {
+        // arguments求最大数
+        function getMax() {
+          let max = arguments[0];
+          for (let i = 1; i <= arguments.length; i++) {
+            if (arguments[i] > max) {
+              max = arguments[i];
+            }
+          }
+          return max;
+        }
+        console.log(getMax(4, 7, 2, 9));
+      }
     </script>
   </head>
   <body></body>

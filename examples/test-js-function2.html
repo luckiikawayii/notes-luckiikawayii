@@ -82,6 +82,35 @@
         }
         console.log(getMax(4, 7, 2, 9));
       }
+      {
+        // 翻转
+        function reverse(arr) {
+          let newArr = [];
+          for (let i = arr.length - 1; i >= 0; i--) {
+            newArr[newArr.length] = arr[i];
+          }
+          return newArr;
+        }
+        let arr1 = reverse([1, 2, 3, 4, 5]);
+        console.log(arr1);
+      }
+      {
+        // 冒泡排序
+        function sort(arr) {
+          for (let i = 0; i <= arr.length - 1; i++) {
+            for (let j = 0; j <= arr.length - i - 1; j++) {
+              if (arr[j] > arr[j + 1]) {
+                let temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+              }
+            }
+          }
+          return arr;
+        }
+        let arr1 = sort([4, 6, 1, 2, 9]);
+        console.log(arr1);
+      }
     </script>
   </head>
   <body></body>

@@ -6,27 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script>
-      // 判断闰年
-      function runYear(year) {
-        let flag = false;
-        if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
-          flag = true;
+      {
+        // 判断闰年
+        function runYear(year) {
+          let flag = false;
+          if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+            flag = true;
+          }
+          return flag;
         }
-        return flag;
-      }
-      console.log(runYear(2000));
-      console.log(runYear(1999));
+        console.log(runYear(2000));
+        console.log(runYear(1999));
 
-      // 输出2月份天数
-      function backDay() {
-        let year = prompt("请输入年份");
-        if (runYear(year)) {
-          alert("当前是闰年2月份，有29天");
-        } else {
-          alert("当年是平年2月份，有28天");
+        // 输出2月份天数
+        function backDay() {
+          let year = prompt("请输入年份");
+          if (runYear(year)) {
+            alert("当前是闰年2月份，有29天");
+          } else {
+            alert("当年是平年2月份，有28天");
+          }
         }
+        backDay();
       }
-      backDay();
+      {
+        // 数组最大值
+        function getMax(arr) {
+          let max = arr[0];
+          for (let i = 1; i <= arr.length; i++) {
+            if (arr[i] > max) {
+              max = arr[i];
+            }
+          }
+          return max;
+        }
+        let re = getMax([4, 2, 7, 1, 8]);
+        console.log(re);
+      }
     </script>
   </head>
   <body></body>

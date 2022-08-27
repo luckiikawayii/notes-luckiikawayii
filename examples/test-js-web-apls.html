@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="time">2022-8-27</div>
+    <script>
+      let timer = document.getElementById("time");
+      console.log(timer);
+      console.dir(timer);
+    </script>
+
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <script>
+      let lis = document.getElementsByTagName("li");
+      console.log(lis);
+      console.log(lis[0]);
+      for (let i = 0; i < lis.length; i++) {
+        console.log(lis[i]);
+      }
+    </script>
+    <div class="box">xxx</div>
+    <div class="box">xxx</div>
+    <div id="nav">
+      <ul>
+        <li>1</li>
+        <li>2</li>
+      </ul>
+    </div>
+    <script>
+      let boxs = document.getElementsByClassName("box");
+      console.log(boxs);
+      let allBox = document.querySelectorAll(".box");
+      console.log(allBox);
+    </script>
+  </body>
+</html>

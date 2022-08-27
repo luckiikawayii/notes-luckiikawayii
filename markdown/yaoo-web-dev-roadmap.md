@@ -43,6 +43,62 @@
   - 在dev tools => console里直接练习熟悉基本语法，变量...
 
 
+# 0827
+- lesson-luckiikawayii-js内置对象、web-api
+- js内置对象
+  - [JavaScript标准内置对象列表](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects)
+  - globalThis === window  // true
+  - window.undefined === undefined  // true
+  - parseInt、parseFloat
+  - arguments
+  - Math
+  - Date
+  - JSON
+  - Promise
+- web-api-DOM/HTML元素相关
+  - [Web API 接口参考](https://developer.mozilla.org/zh-CN/docs/Web/API)
+  - document
+  - element对象添加事件
+- web-api-浏览器或操作系统相关
+  - window
+  - console
+  - history
+  - 数据请求相关 xhr、fetch
+  - 存储相关 cookie、localStorage、indexeddb
+  - [Navigator](https://developer.mozilla.org/zh-CN/docs/Web/API/Navigator)
+    - navigator.platform/language
+
+- 可复用的工具库集合 npm
+  - nvm 安装
+    - https://github.com/nvm-sh/nvm
+    - https://gitee.com/RubyKids/nvm-cn
+  - css工具
+    - skeleton-css
+      - https://www.npmjs.com/package/skeleton-css
+    - @picocss/pico
+      - https://www.npmjs.com/package/@picocss/pico
+    - bootstrap 只使用css部分，不要使用js部分
+      - https://www.npmjs.com/package/bootstrap
+      - https://github.com/twbs/bootstrap
+  - js工具
+    - react
+      - https://www.npmjs.com/package/react
+    - reactstrap
+      - https://www.npmjs.com/package/reactstrap
+      - https://github.com/reactstrap/reactstrap
+    - react-bootstrap
+      - https://npmjs.com/package/react-bootstrap
+      - https://github.com/react-bootstrap/react-bootstrap
+  - 颜色操作 
+    - tinycolor2
+      - https://www.npmjs.com/package/tinycolor2
+      - https://github.com/bgrins/TinyColor
+  - 日期操作
+    - date-fns
+      - https://github.com/date-fns/date-fns
+  - url操作
+    - url-join
+      - https://github.com/jfromaniello/url-join
 # 0822
 
 - lesson-luckiikawayii-js基础 - 数组、对象、函数

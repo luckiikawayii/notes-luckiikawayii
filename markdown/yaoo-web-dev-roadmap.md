@@ -47,7 +47,7 @@
 - lesson-luckiikawayii-js内置对象、web-api
 - js内置对象
   - [JavaScript标准内置对象列表](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects)
-  - globalThis === window  // true
+  - globalThis === window  // true 浏览器环境下的全局对象是window
   - window.undefined === undefined  // true
   - parseInt、parseFloat
   - arguments
@@ -59,6 +59,7 @@
   - [Web API 接口参考](https://developer.mozilla.org/zh-CN/docs/Web/API)
   - document
   - element对象添加事件
+  - 自己实现切换暗黑主题的示例 https://codepen.io/uptonking/pen/xxWzYJq
 - web-api-浏览器或操作系统相关
   - window
   - console

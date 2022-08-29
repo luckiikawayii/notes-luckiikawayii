@@ -14,6 +14,20 @@
         color: aliceblue;
         background-color: pink;
       }
+      .div1 {
+        width: 300px;
+        height: 30px;
+        line-height: 30px;
+        color: aliceblue;
+        background-color: skyblue;
+      }
+      .div2 {
+        width: 300px;
+        height: 30px;
+        line-height: 30px;
+        color: aliceblue;
+        background-color: orangered;
+      }
     </style>
   </head>
   <body>
@@ -47,6 +61,23 @@
       }
       let p = document.querySelector("p");
       p.innerText = getDate();
+    </script>
+    <button id="ldh">刘德华</button>
+    <button id="zxy">张学友</button>
+    <div class="div1">1</div>
+    <div class="div2">2</div>
+    <script>
+      let ldh = document.getElementById("ldh");
+      let zxy = document.getElementById("zxy");
+      let div1 = document.querySelector("div1");
+      let div2 = document.querySelector("div2");
+      if ((onclick = "ldh")) {
+        div.div1 = div1;
+        div1.innerHTML = "1";
+      } else {
+        div.div2 = div2;
+        div2.innerHTML = "2";
+      }
     </script>
   </body>
 </html>

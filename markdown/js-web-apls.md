@@ -42,5 +42,11 @@
 ## 操作元素
 
 - 1. 改变内容
-   - 1. element.innerText  标签里面的文本内容，去除html标签 空格 换行
-   - 2. element.innerHTML  标签里面的文本内容，保留html标签 空格 换行
+   - 1. element.innerText  标签里面的文本内容，不识别html标签 空格 换行
+   - 2. element.innerHTML  标签里面的文本内容，识别html标签 空格 换行
+- 2. 表单属性修改
+   - 注意：表单里面的值 文字内容是通过value来修改的
+   - 1. 想要某个表单被禁用，不能再点击 disabled
+- 3. 样式属性修改
+   - 1. element.style  行内样式操作
+   - 2. element.className  类名样式操作

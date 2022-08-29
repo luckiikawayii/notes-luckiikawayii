@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .div1 {
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div>上午好</div>
+    <script>
+      let div = document.querySelector("div");
+      let date = new Date();
+      let h = date.getHours();
+      if (h < 12) {
+        div.innerHTML = "上午好";
+      } else if (h < 19) {
+        div.innerHTML = "下午好";
+      } else {
+        div.innerHTML = "晚上好";
+      }
+    </script>
+    <button>按钮</button>
+    <input type="text" value="输入内容" />
+    <script>
+      let btn = document.querySelector("button");
+      let input = document.querySelector("input");
+      btn.onclick = function () {
+        input.value = "被点击了";
+        btn.disabled = true;
+      };
+    </script>
+    <!-- 修改样式 -->
+    <div class="div1"></div>
+    <script>
+      let div1 = document.getElementById("div1");
+      div1.onclick = function () {
+        div1.style.backgroundColor = "blue";
+      };
+    </script>
+  </body>
+</html>

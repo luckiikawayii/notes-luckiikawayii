@@ -36,11 +36,38 @@
     - 修改元素或属性
     - 页面事件原理 p247-p265
   - js工具库，如jquery p358-p386
-    - jquery已过时，了解即可，不需要练习每个案例
+    - jquery已过时，只需了解，不需要练习每个案例
   - to-do-list练习简单项目、模版项目 p425-p434
 
 - [如何循序渐进、有效地学习JavaScript？](https://www.zhihu.com/question/19713563)
   - 在dev tools => console里直接练习熟悉基本语法，变量...
+
+
+# 0831
+- lesson-luckiikawayii-html/css/js总结复习+自我介绍案例
+- html
+  - 块级元素 block
+  - 行内元素 inline
+- css
+  - 选择器
+  - 盒模型
+  - 定位、布局
+- js
+  - 基础考察很少：数据类型、运算符、流程控制
+  - 异步：setTimeout、Promise
+
+- 培养学习和工作的习惯
+  - 搜索普通问题、资料
+    - google、知乎
+  - 搜索面试资料
+    - [语雀知识库](https://www.yuque.com/search?q=%E5%89%8D%E7%AB%AF+%E9%9D%A2%E8%AF%95&type=book&scope=%2F&tab=public&p=1)
+  - 搜索开源项目，如个人介绍项目
+    - [偏重css的portfolio](https://github.com/search?q=css+portfolio)
+      - https://github.com/tailwindtoolbox/Profile-Card
+      - https://github.com/Maclinz/JS_CSS_PortfolioProject
+      - https://github.com/rammcodes/Dopefolio
+    - [偏重react的portfolio](https://github.com/search?q=react+portfolio)
+      - https://github.com/soumyajit4419/Portfolio
 
 
 # 0827

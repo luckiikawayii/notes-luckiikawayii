@@ -32,6 +32,6 @@
 ```
      * {
       margin: 0
-      paading:0
+      padding:0
      }
 ```

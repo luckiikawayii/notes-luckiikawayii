@@ -1,0 +1,20 @@
+.ch1 {
+  color: pink;
+  line-height: 2;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-indent: 60px;
+}
+.ch2 {
+  color: aquamarine;
+  font-size: 18px;
+  font-family: "楷体";
+  line-height: 35px;
+  text-decoration: line-through;
+  text-indent: 60px;
+}
+h1 {
+  color: bisque;
+  text-align: center;
+}

@@ -1,3 +1,4 @@
+//   区别不同有无小数点 用法
 #include <stdio.h>
 #include <math.h>
 int main()

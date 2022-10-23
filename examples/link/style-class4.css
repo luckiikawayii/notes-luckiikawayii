@@ -1,0 +1,28 @@
+.con1 {
+  width: 1040px;
+  margin: auto;
+}
+.con2 {
+  height: 780px;
+  background-image: url(../images/20190312234152_ekevv.jpeg);
+}
+h2 {
+  color: darkgreen;
+  margin-top: 0px;
+  text-align: center;
+  padding-top: 20px;
+}
+.style1 {
+  line-height: 26px;
+  font-size: 18px;
+  color: darkcyan;
+  text-indent: 30px;
+  padding: 20px 60px 0px 60px;
+}
+.style2 {
+  line-height: 26px;
+  font-size: 18px;
+  color: pink;
+  font-family: "Courier New", Courier, monospace;
+  padding: 120px 60px 0px 60px;
+}

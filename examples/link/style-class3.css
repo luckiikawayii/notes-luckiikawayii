@@ -1,0 +1,56 @@
+#con {
+  width: 1000px;
+  margin: auto;
+}
+img {
+  width: 1000px;
+  height: 200px;
+  padding-bottom: 0px;
+}
+
+.nav1 {
+  background-color: greenyellow;
+  height: 32px;
+}
+.left1 {
+  background-color: antiquewhite;
+  height: 600px;
+  width: 550px;
+  float: left;
+}
+.right1 {
+  background-color: bisque;
+  width: 450px;
+  height: 600px;
+  float: right;
+}
+h2 {
+  text-align: center;
+  line-height: 60px;
+  color: mediumturquoise;
+}
+.style1,
+.style2 {
+  color: burlywood;
+  margin: 0 20px;
+}
+.con1 {
+  width: 600px;
+  margin: auto;
+}
+
+.left2,
+img {
+  float: left;
+  width: 200px;
+  height: 200px;
+}
+.right2 {
+  float: right;
+}
+.line {
+  border-left: 1px solid gray;
+}
+.clearfloat {
+  clear: both;
+}

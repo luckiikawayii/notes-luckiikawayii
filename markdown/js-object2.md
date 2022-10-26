@@ -20,18 +20,20 @@
 
 ## Date ()日期对象
 
-- 定义：是一个构造函数，必须使用new 来创建日期对象
+- 定义：是一个构造函数，必须使用new!! 来创建日期对象
 - eg.let date=new Date()  创造一个数组对象
 - 如果没有写参数，返回当前系统的当前时间
-- 常用参数写法：数字型   字符串型
+- 常用参数写法：   
 - 1. 日期格式化
--     date.getFullYear()  显示当前年分
+- 
+- 数字型date.getFullYear()  显示当前年分
 -     date.getMonth()  显示当月（0～11）返回月份小1月，月份要+1
 -     date.getDate()   显示几号
 -     date.getDay()  显示当前星期几    周日返回0，周六返回6
 -     date.getHours()   显示  时
 -     date.getMinutes()  显示  分
 -     date.getSeconds()  显示  秒
+- 字符串型 let date=new Date('日期')   
 - 2. 获得Date总的毫秒数
 - 距离1970.1.1过了多少毫秒
 - eg 1.console.log(Date.now())

@@ -16,4 +16,11 @@
 -         eg. var arr=[1, 2, 3]
 -             arr[3]=4
 - 注意：如果arr[]里面已经有了值，则会修改元素
-       不要直接给数组名赋值，否则会覆盖掉以前的数据
+       不要直接给数组名赋值，否则会覆盖掉以前的数组
+
+- 5. 替换字符 replace（’被替换的字符‘’替换的字符‘）
+-  eg.let str='andy'
+-     console.log(str.replace('a''b'))
+- 6. 字符转换为数组 split('分隔符')
+-  eg. let str='red, pink, blue'
+-     console.log(str.split(', '))

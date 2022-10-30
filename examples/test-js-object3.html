@@ -54,6 +54,30 @@
         let date = new Date();
         console.log(date);
       }
+      {
+        // 统计出现次数最多的字符
+        let str = "abcoefoxyozzopp";
+        let o = {};
+        for (let i = 0; i < str.length; i++) {
+          let chars = str.charAt(i);
+          if (o[chars]) {
+            o[chars]++;
+          } else {
+            o[chars] = 1;
+          }
+        }
+        console.log(o);
+        let max = 0;
+        let ch = "";
+        for (let k in o) {
+          if (o[k] > max) {
+            max = (0)[k];
+            ch = k;
+          }
+        }
+        console.log(max);
+        console.log("最多的字符是" + ch);
+      }
     </script>
   </head>
   <body></body>

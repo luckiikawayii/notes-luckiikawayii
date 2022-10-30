@@ -1,12 +1,18 @@
 # web APLs
 
+## DOM
+
+- DOM：用来改变网页内容，结构，样式的文档对象
+- 用document表示，页面中所有的标签都是元素，用element表示，网页中所有的内容都是节点，用node表示
+- 
+
 ## 获取元素
 
-- 1. getElementById 获取元素
+- 1. getElementById 获取带有ID元素
    - 1. 文档页面从上往下加载，先得有标签，所以script在标签下面
 
-     参数id是大小写敏感的字符串
-     返回的是一个元素对象
+     参数id是大小写敏感的 字符串!
+     返回的是一个元素对象object
      console.dir 打印返回元素对象，更好的查看里面的属性和方法
 
 - 2. 标签名获取元素
@@ -18,6 +24,7 @@
    - 2. 获取某个元素（父元素）内部所有指定标签名的子元素
 
     element.getElementsByTagName('标签名')
+    父元素必须是单个对象（必须指明是哪一个元素对象），获取的时候不包括父元素自己
 
 - 3. 通过html5新增的方法获取
    - 1. Document.getElementByClassName('类名')  根据类名返回元素对象集合 

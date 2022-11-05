@@ -1,0 +1,49 @@
+.con {
+  width: 1400px;
+  margin: auto;
+}
+h2 {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 24px;
+}
+.style1 {
+  padding: 35px 10px 0px 10px;
+  line-height: 28px;
+}
+.style2 {
+  margin-top: 5px;
+  margin-left: 10px;
+  line-height: 40px;
+  padding: 0px 15px;
+  font-size: 18px;
+}
+.style3 {
+  line-height: 32px;
+  padding: 0px 15px;
+}
+.header {
+  background-image: url("../images/WechatIMG27.jpeg");
+  height: 300px;
+  width: 1400px;
+  text-align: center;
+}
+
+.span1 {
+  background-image: url("../images/5be13025ddd85.jpeg");
+  width: 400px;
+  height: 500px;
+  float: left;
+}
+.span3 {
+  background-image: url("../images/WechatIMG25.jpeg");
+  width: 400px;
+  height: 500px;
+  float: right;
+}
+.span2 {
+  background-image: url("../images/5be13023b5141.jpeg");
+  width: 600px;
+  height: 500px;
+  float: left;
+}

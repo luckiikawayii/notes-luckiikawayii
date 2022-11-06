@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input {
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 显示隐藏文本框内容 -->
+    <input type="text" value="手机" />
+    <script>
+      // 1. 获取元素
+      let text = document.querySelector("input");
+      // 2. 注册事件，获得焦点事件 onfocus
+      text.onfocus = function () {
+        // console.log("得到焦点");
+        if (text.value === "手机") {
+          text.value = "";
+        }
+        // 获得了焦点需要把文本框里面的文字颜色变黑
+        text.style.color = "black";
+      };
+      //   3. 注册事件，失去焦点 onblur
+      text.onblur = function () {
+        // console.log("失去焦点");
+        if (text.value === "") {
+          text.value = "手机";
+        }
+        text.style.color = "gray";
+      };
+    </script>
+  </body>
+</html>

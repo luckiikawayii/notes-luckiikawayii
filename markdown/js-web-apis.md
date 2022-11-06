@@ -50,10 +50,14 @@
 
 - 1. 改变内容
    - 1. element.innerText  标签里面的文本内容，不识别html标签 空格 换行
-   - 2. element.innerHTML  标签里面的文本内容，识别html标签 空格 换行
+   - 2. element.innerHTML  标签里面的文本内容，识别html标签 空格 换行(只能改变普通盒子里面的内容，eg.div盒子)
 - 2. 表单属性修改
    - 注意：表单里面的值 文字内容是通过value来修改的
    - 1. 想要某个表单被禁用，不能再点击 disabled
+
+      eg. but.disabled=true;
+        ==this.disabled=true; //this 指向的是此事件函数的调用者 but
+
 - 3. 样式属性修改
    - 1. element.style  行内样式操作
    - 2. element.className  类名样式操作

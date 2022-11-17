@@ -50,3 +50,23 @@ h2 {
 .line {
   border-top: 2px solid gray;
 }
+.span {
+  width: 75%;
+  height: 90px;
+  margin: auto;
+  background-color: moccasin;
+  text-align: center;
+}
+
+li {
+  width: 100px;
+  height: 80px;
+  margin: 5px 20px;
+  display: inline-block;
+  line-height: 80px;
+  color: gray;
+}
+li:hover {
+  background-color: pink;
+  color: skyblue;
+}

@@ -61,3 +61,7 @@
 - 3. 样式属性修改
    - 1. element.style  行内样式操作
    - 2. element.className  类名样式操作
+
+       修改元素的className更改元素的样式 适用于样式较多 情况较复杂的情况
+       会改变原来属性的类名
+       想要不改变原来的类名：this.className='first change'   多类名选择器

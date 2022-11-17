@@ -1,0 +1,22 @@
+.con {
+  width: 1000px;
+  background-color: antiquewhite;
+}
+.part1 {
+  height: 195px;
+  margin: auto;
+  background-image: url(../images/WechatIMG240.jpeg);
+}
+.part2 {
+  height: 50px;
+  margin: auto;
+}
+.part2 span li {
+  background-image: url(../images/WechatIMG244.jpeg);
+
+  height: 20px;
+  margin: 5px 20px;
+  display: inline-block;
+  line-height: 80px;
+  color: gray;
+}

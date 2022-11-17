@@ -1,6 +1,7 @@
 .con {
   width: 1000px;
   margin: auto;
+  background-color: antiquewhite;
 }
 .con1 {
   width: 1000px;
@@ -36,4 +37,25 @@ img {
 }
 .style1:hover {
   color: gray;
+}
+.span1 {
+  width: 1000px;
+  height: 90px;
+  margin: auto;
+  background-color: moccasin;
+  text-align: center;
+}
+
+a {
+  width: 100px;
+  height: 80px;
+  margin: 10px 20px;
+  display: inline-block;
+  line-height: 80px;
+  text-decoration: none;
+  color: gray;
+}
+a:hover {
+  background-color: pink;
+  color: skyblue;
 }

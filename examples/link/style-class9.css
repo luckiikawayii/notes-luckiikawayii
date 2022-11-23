@@ -1,0 +1,29 @@
+.box {
+  width: 800px;
+  height: 800px;
+  margin: auto;
+  background-color: gray;
+  border-radius: 25px 25px 50px 50px;
+  box-shadow: 5px 5px 5px 5px black;
+}
+img {
+  width: 200px;
+  height: 200px;
+  float: left;
+  border-radius: 50%;
+  display: block;
+  margin: 20px;
+}
+
+.right {
+  font-size: 24px;
+  font-family: "Courier New", Courier, monospace;
+  float: left;
+  width: 550px;
+  height: 225px;
+  background-color: antiquewhite;
+  line-height: 50px;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}

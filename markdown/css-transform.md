@@ -1,0 +1,6 @@
+- 一. 使图形发生改变
+- 1. 静态旋转：transform:rotate(xxdeg)  xx为正数则顺时针旋转，为负数则逆时针旋转
+-   若要网页兼容，则改为-webkit-transform:rotate(xxdeg)
+- 2. 静态放大缩小：transform:scale(xx)    xx为 x，y轴 放大比例
+-    若要以x轴缩放，则为transform:scaleX(xx) 
+-    若要以y轴缩放，则为transform:scaleY(xx) 

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 1000px;
+        height: 1000px;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button>开关</button>
+    </div>
+    <script>
+      let btn = document.querySelector("button");
+      let div = document.getElementsByTagName("div");
+      let flag = 0;
+      btn.onclick = function () {
+        if (flag == 0) {
+          div.style.backgroundColor = "white";
+          flag = 1;
+        } else {
+          div.style.backgroundColor = "black";
+          flag = 0;
+        }
+      };
+    </script>
+  </body>
+</html>

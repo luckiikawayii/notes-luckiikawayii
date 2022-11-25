@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      td,
+      th {
+        border: 1px solid pink;
+        border-collapse: collapse;
+        text-align: center;
+      }
+      table {
+        width: 500px;
+        height: 250px;
+      }
+      .bg {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <table align="center" cellspacing="0">
+      <thead>
+        <tr>
+          <th>排名</th>
+          <th>关键词</th>
+          <th>趋势</th>
+          <th>今日搜索</th>
+          <th>最近七日</th>
+          <th>相关搜索</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>西游记</td>
+          <td><img src="../images/up.jpg" /></td>
+          <td>12345</td>
+          <td>123456</td>
+          <td>
+            <a href="https://www.baidu.com" target="-blank">百度</a>
+            <a href="https://www.zhihu.com">知乎</a>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>红楼梦</td>
+          <td><img src="../images/up.jpg" /></td>
+          <td>1234</td>
+          <td>12345</td>
+          <td>
+            <a href="https://www.baidu.com" target="-blank">百度</a>
+            <a href="https://www.zhihu.com">知乎</a>
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>三国演义</td>
+          <td><img src="../images/down.jpg" /></td>
+          <td>123</td>
+          <td>1234</td>
+          <td>
+            <a href="https://www.baidu.com" target="-blank">百度</a>
+            <a href="https://www.zhihu.com">知乎</a>
+          </td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>水浒传</td>
+          <td><img src="../images/down.jpg" /></td>
+          <td>12</td>
+          <td>123</td>
+          <td>
+            <a href="https://www.baidu.com" target="-blank">百度</a>
+            <a href="https://www.zhihu.com">知乎</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <script>
+      // 获取tbody里面所有的行
+      let trs = document.querySelector("tbody").querySelectorAll("tr");
+      //   绑定循环事件
+      for (let i = 0; i < tb.length; i++) {
+        // 鼠标经过添加事件 onmouseover
+        trs[i].onmouseover = function () {
+          this.className = "bg";
+        };
+        //  鼠标离开删除事件 onmouseout
+        trs[i].onmouseout = function () {
+          this.className = "";
+        };
+      }
+    </script>
+  </body>
+</html>

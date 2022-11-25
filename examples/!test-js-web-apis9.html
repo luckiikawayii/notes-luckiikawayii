@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        width: 1500px;
+        height: 800px;
+      }
+      img {
+        width: 340px;
+        height: 350px;
+
+        margin: auto;
+      }
+      li {
+        list-style: none;
+        display: inline-block;
+      }
+      .baidu {
+        overflow: hidden;
+        margin: 100px auto;
+        background-color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 排他思想  首先排除其他人，再设置自己-->
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>4</button>
+    <script>
+      let btns = document.getElementsByTagName("button");
+      //   btns为伪数组，里面的每一个按钮元素 btns[i]
+      for (let i = 0; i < btns.length; i++) {
+        btns[i].onclick = function () {
+          // 先把背景去掉
+          for (let i = 0; i < btns.length; i++) {
+            btns[i].style.backgroundColor = "";
+          }
+          //   改变当前样式
+          btns[i].style.backgroundColor = "pink";
+        };
+      }
+    </script>
+
+    <!-- 换肤效果 -->
+    <ul class="baidu">
+      <li><img src="../examples/images/20190312234152_ekevv.jpeg" /></li>
+      <li><img src="../examples/images/20190821221021_gupmf.jpeg" /></li>
+      <li><img src="../examples/images/5be13023b5141.jpeg" /></li>
+      <li><img src="../examples/images/5be13024be013.jpeg" /></li>
+    </ul>
+    <script>
+      let imgs = document.querySelector(".baidu").querySelectorAll("img");
+      for (let i = 0; i < imgs.length; i++) {
+        imgs[i].onclick = function () {
+          //   为什么这里输出的是undefined,应该点谁出来的就是那张图的路径啊
+          console.log(imgs.src);
+          document.body.style.backgroundImage = "src('+imgs.src+')";
+        };
+      }
+    </script>
+  </body>
+</html>

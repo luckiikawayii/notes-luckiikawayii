@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      nav {
+        overflow: hidden;
+        margin: 0 4px 2px;
+        border-radius: 5px;
+        background-color: pink;
+      }
+      a {
+        text-decoration: none;
+      }
+      .nav-common {
+        display: flex;
+        height: 88px;
+        background-color: pink;
+      }
+
+      .nav-items a:nth-child(1) {
+        border-bottom: 1px solid white;
+      }
+      .nav-items a:nth-child(2) {
+        border-bottom: 1px solid white;
+      }
+      .nav-items:nth-child(-n + 2) {
+        border-right: 1px solid white;
+      }
+      .nav-items {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+      .nav-items a {
+        flex: 1;
+        text-align: center;
+        line-height: 44px;
+        color: white;
+        font-size: 14px;
+        text-shadow: 1px 1px gray;
+      }
+      .nav-common:nth-child(2) {
+        margin: 3px 0;
+        background: -webkit-linear-gradient(left, blue, skyblue);
+      }
+      .nav-common:nth-child(1) {
+        background: -webkit-linear-gradient(left, orange, yellow);
+      }
+      .nav-common:nth-child(3) {
+        background: -webkit-linear-gradient(left, green, cyan);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 主导航栏 -->
+    <nav>
+      <div class="nav-common">
+        <div class="nav-items">
+          <a href="#">旅游</a>
+        </div>
+        <div class="nav-items">
+          <a href="#">旅游</a>
+          <a href="#">景点</a>
+        </div>
+        <div class="nav-items">
+          <a href="#">旅游</a>
+          <a href="#">景点</a>
+        </div>
+      </div>
+      <div class="nav-common">
+        <div class="nav-items">
+          <a href="#">旅游</a>
+        </div>
+        <div class="nav-items">
+          <a href="#">旅游</a>
+          <a href="#">景点</a>
+        </div>
+        <div class="nav-items">
+          <a href="#">旅游</a>
+          <a href="#">景点</a>
+        </div>
+      </div>
+      <div class="nav-common">
+        <div class="nav-items">
+          <a href="#">旅游</a>
+        </div>
+        <div class="nav-items">
+          <a href="#">旅游</a>
+          <a href="#">景点</a>
+        </div>
+        <div class="nav-items">
+          <a href="#">旅游</a>
+          <a href="#">景点</a>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>

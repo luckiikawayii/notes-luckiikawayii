@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .tab-list li {
+        float: left;
+        height: 30px;
+        line-height: 30px;
+        padding: 0px 20px;
+        text-align: center;
+        cursor: pointer;
+        list-style: none;
+      }
+      .tab-list .cur {
+        background-color: orangered;
+        color: white;
+      }
+      .item-info {
+        padding: 20px 0px 0px 20px;
+      }
+      .item {
+        display: none;
+      }
+      .tab-list {
+        height: 100ox;
+        width: 600px;
+      }
+      .tab-con {
+        height: 400px;
+        width: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- tab栏制作 -->
+    <div class="tab">
+      <div class="tab-list">
+        <ul>
+          <li class="cur">商品介绍</li>
+          <li>规格与包装</li>
+          <li>商品介绍</li>
+          <li>售后保障</li>
+          <li>手机社区</li>
+        </ul>
+      </div>
+      <div class="tab-con">
+        <div class="item" style="display: block">商品介绍模块内容</div>
+        <div class="item">规模与包装模块内容</div>
+        <div class="item">售后保障模块内容</div>
+        <div class="item">商品评价模块内容</div>
+        <div class="item">手机社区模块内容</div>
+      </div>
+    </div>
+    <script>
+      //  点击某一个模块，当前这个底色会是红色，其余不变（排他思想）修改类名的方法
+    </script>
+  </body>
+</html>

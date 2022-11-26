@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>动画</title>
+    <style type="text/css">
+      .animationpic {
+        width: 200px;
+        height: 200px;
+        background: red;
+        position: relative;
+        animation: myfirst 5s infinite;
+        animation-direction: alternate;
+        -webkit-animation: myfirst 5s infinite;
+        -webkit-animation-direction: alternate;
+      }
+      @keyframes myfirst {
+        0% {
+          background: red;
+          left: 0px;
+          top: 0px;
+        }
+        25% {
+          background: yellow;
+          left: 300px;
+          top: 0px;
+        }
+        50% {
+          background: blue;
+          left: 300px;
+          top: 300px;
+        }
+        75% {
+          background: green;
+          left: 0px;
+          top: 300px;
+        }
+        100% {
+          background: red;
+          left: 0px;
+          top: 0px;
+        }
+      }
+      @-webkit-keyframes myfirst {
+        0% {
+          background: red;
+          left: 0px;
+          top: 0px;
+        }
+        25% {
+          background: yellow;
+          left: 300px;
+          top: 0px;
+        }
+        50% {
+          background: blue;
+          left: 300px;
+          top: 300px;
+        }
+        75% {
+          background: green;
+          left: 0px;
+          top: 300px;
+        }
+        100% {
+          background: red;
+          left: 0px;
+          top: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="animationpic">
+      <img src="../images/logo.png" width="200" height="200" />
+    </div>
+  </body>
+</html>

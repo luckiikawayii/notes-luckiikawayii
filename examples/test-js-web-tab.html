@@ -57,6 +57,30 @@
     </div>
     <script>
       //  点击某一个模块，当前这个底色会是红色，其余不变（排他思想）修改类名的方法
+      let tab_list = document.querySelector(".tab-list");
+      let lis = document.querySelectorAll("li");
+      let items = document.querySelectorAll(".item");
+      for (let i = 0; i < lis.length; i++) {
+        // 给5个小li设置索引号
+        lis[i].setAttribute("index", i);
+        lis[i].onclick = function () {
+          // 干掉所有人 其余的li清除class这个类
+          for (let i = 0; i < lis.length; i++) {
+            lis[i].className = "";
+          }
+          // 留下我自己
+          this.className = "cur";
+        };
+        // 显示内容模块
+        let index = this.getAttribute("index");
+        console.log(index);
+        // 干掉所有人 让其余的item隐藏
+        for (let i = 0; i < items.length; i++) {
+          items[i].style.display = "none";
+        }
+        // 留下自己，让对应的item显示出来
+        items[index].style.display = "block";
+      }
     </script>
   </body>
 </html>

@@ -1,3 +1,5 @@
+虚拟dom是一个object
+
 ## 1.useState
 
 - 用来定义状态的

@@ -12,7 +12,7 @@
       class Person {
         // 1.构造器方法
         constructor(name, age) {
-          // 使用this前想一下构造器中的this是谁
+          // 构造器中的this是谁---类的实例对象
           this.name = name;
           this.age = age;
         }
@@ -26,6 +26,27 @@
       const p1 = new Person("tom", 18);
       console.log(p1);
       p1.speak();
+      // --------------------------------------------
+      // 常见一个student类，继承person类
+      class Student extends Person {
+        constructor(name, age, grade) {
+          super(name, age);
+          this.grade = grade;
+        }
+        // 重写从父类继承过来的方法
+        // speak() {
+        //   console.log(`我是${this.name},年龄是${this.age},${this.grade}年级`);
+        // }
+        // study() {
+        //   console.log("");
+        // }
+      }
+      const s1 = new Student("小张", 19, "大一");
+      console.log(s1);
+      // 总结：
+      //      1.类中的构造器不是必须写的，要对实例进行一些初始化的操作，如添加指定属性
+      //      2.如果a类继承了b类，且a类写了构造器，那么a类构造器中的super是必须要调用的
+      //      3.类中定义的方法，都是放在了类的原型对象上，供实例去使用
     </script>
   </body>
 </html>

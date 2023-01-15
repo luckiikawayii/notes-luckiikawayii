@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>类的复习</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      // 创建一个person类
+      class Person {
+        // 1.构造器方法
+        constructor(name, age) {
+          // 使用this前想一下构造器中的this是谁
+          this.name = name;
+          this.age = age;
+        }
+        //  2.一般方法
+        speak() {
+          // 通过person实例调用speak时，speak中的this就是person实例
+          console.log(`我是${this.name},年龄是${this.age}`);
+        }
+      }
+      // 创建一个person的实例对象
+      const p1 = new Person("tom", 18);
+      console.log(p1);
+      p1.speak();
+    </script>
+  </body>
+</html>

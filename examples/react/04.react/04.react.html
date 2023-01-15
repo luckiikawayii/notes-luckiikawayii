@@ -28,7 +28,11 @@
         return <h2>函数定义组件（适用于简单组件）的定义</h2>;
       }
       //   渲染组件到页面
-      ReactDOM.render(<MyComponent />), document.getElementById("test");
+      ReactDOM.render(<MyComponent />), document.getElementById("test"); //<MyComponent />注意此处为组件标签，不能直接写成组件的名字
+      /*执行过程
+        1.react解析组件标签，找到MyComponent 组件
+        2. 发现组件是函数定义的，将返回的虚拟dom转为真实dom
+        */
     </script>
   </body>
 </html>

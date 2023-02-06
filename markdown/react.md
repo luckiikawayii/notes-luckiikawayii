@@ -10,9 +10,13 @@
 
 ## 2.state
 
-- 1.
-- 2.useState
+- 1. useState
 - 用来定义状态的
+- 2. 组件中的render方法中的this为组件实例对象
+- 3. 组件自定义方法中的this为undefined，如何解决？
+-  a. 强制绑定this：通过函数对象中的bind（）
+-  b. 赋值语句+箭头函数
+- 4. 状态数据，不能直接修改或更新
 
 ## 3. Hook
 

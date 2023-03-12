@@ -4,13 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>props批量传递</title>
   </head>
   <body>
     <div id="test"></div>
     <script src="https://cdn.bootcss.com/react/15.4.2/react.min.js"></script>
     <script src="https://cdn.bootcss.com/react/15.4.2/react-dom.min.js"></script>
     <script src="https://cdn.bootcss.com/babel-standalone/6.22.1/babel.min.js"></script>
-    <script type="text/babel"></script>
+    <script type="text/babel">
+      class person extends React.Component {
+        render() {
+          const { name, age, sex } = this.props;
+          render(
+            <ul>
+              <li>姓名：{name}</li>
+              <li>年龄：{age}</li>
+              <li>性别：{sex}</li>
+            </ul>
+          );
+        }
+      }
+      ReactDOM.render(<person name="jerry" age="19" sex="男" />),
+        document.getElementById("test");
+      const p = { name: "老刘", age: 18, sex: "女" };
+      ReactDOM.render(<person {...p} />), document.getElementById("test");
+    </script>
   </body>
 </html>

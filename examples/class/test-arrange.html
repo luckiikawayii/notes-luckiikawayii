@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        border: 2px gray solid;
+        width: 100%;
+        height: 400px;
+      }
+      .span1 {
+        width: 800px;
+        height: 80px;
+        border: 2px gray solid;
+      }
+      .span1 li {
+        list-style: none;
+        border: 1px gray solid;
+        width: 100px;
+        height: 50px;
+        display: inline-block;
+        margin: 0px 10px;
+        text-align: center;
+      }
+      .span2 {
+        width: 800px;
+        height: 100px;
+        border: 2px gray solid;
+      }
+      .span2 li {
+        list-style: none;
+        width: 350px;
+        height: 150px;
+        text-align: center;
+        margin: 0 10px;
+      }
+      .span3 {
+        width: 600px;
+        text-align: center;
+        height: 400px;
+      }
+      .span3 li {
+        list-style: none;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        margin: 0 10px;
+      }
+      .span3 li :nth-child(4) {
+        width: 150px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <span class="span1">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </span>
+      <div class="span2">
+        <li></li>
+        <li></li>
+        <div class="span3">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

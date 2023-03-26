@@ -8,19 +8,20 @@
   </head>
   <body>
     <script>
-      function sum4_10(x, y) {
-        let i;
-        let sum = 0;
-        for (i = x; i <= y; i++) {
-          if (x % 3 != 0 && y % 3 != 0) {
-            sum += i;
-          }
+      function table_n() {
+        let i, j;
+        let n = window.prompt("输入一个数字n:", 1);
+        for (i = 9; i <= 9; i++) {
+          let i = n;
+          let j = i;
+
+          document.write(n + "*" + n + "=" + j * i + "<br/>");
         }
+
+        document, write("<br/>");
       }
 
-      document.write(
-        "x,y" + "之间不能被3整除的数之和为：" + sum4_10[(10, 20)] + " <br />"
-      );
+      table_n();
     </script>
   </body>
 </html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nav</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+      #con {
+        background: url(./top_bg.gif) repeat-x;
+        font-size: 10px;
+        padding-top: 98px;
+      }
+      #con ul#nav {
+        width: 880px;
+        height: 25px;
+        margin: 0 auto;
+      }
+      #nav li {
+        float: left;
+      }
+      #nav a {
+        text-decoration: none;
+        color: white;
+        line-height: 26px;
+        background: url(./nav_bg.gif);
+        width: 80px;
+        text-align: center;
+        margin-right: 3px;
+        display: inline-block;
+      }
+      .one a {
+        color: white;
+        background: url(./nav_bg_hover.gif);
+      }
+
+      #nav li a:hover {
+        color: white;
+        background: url(./nav_bg_hover.gif);
+      }
+      #sub a {
+        text-decoration: none;
+        color: black;
+        line-height: 26px;
+        width: 120px;
+        display: inline-block;
+        margin-right: 3px;
+        text-align: center;
+      }
+      #sub li {
+        float: left;
+      }
+      #con #sub {
+        width: 880px;
+        height: 25px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="con">
+      <ul id="nav">
+        <li class="one"><a href="#">index</a></li>
+        <li><a href="#">about us</a></li>
+        <li><a href="#">services</a></li>
+        <li><a href="#">solutions</a></li>
+        <li><a href="#">testimonials</a></li>
+        <li><a href="#">projects</a></li>
+        <li><a href="#">online jobs</a></li>
+        <li><a href="#">login</a></li>
+        <li><a href="#">submission</a></li>
+        <li><a href="#">contact us</a></li>
+      </ul>
+      <ul id="sub">
+        <li><a href="#">who we are</a></li>
+        <li><a href="#">what our future</a></li>
+        <li><a href="#">forum</a></li>
+        <li><a href="#">company profiles</a></li>
+        <li><a href="#">communtications</a></li>
+        <li><a href="#">imformation</a></li>
+        <li><a href="#">finally</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

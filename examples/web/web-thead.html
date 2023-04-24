@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .dome {
+        width: 600px;
+        height: 800px;
+        margin: 0 auto;
+      }
+
+      table,
+      td,
+      th {
+        border: 1px solid pink;
+        border-collapse: collapse;
+        text-align: center;
+      }
+      table {
+        width: 500px;
+        height: 250px;
+      }
+      .bordered thead th {
+        background-color: skyblue;
+      }
+      .bordered {
+        border-radius: 10px;
+        box-shadow: 0 3px 3px gray;
+      }
+      .zebra {
+        border-radius: 10px;
+        box-shadow: 0 3px 3px gray;
+      }
+      .zebra thead th {
+        background-color: gray;
+      }
+      .zebra tr:nth-child(2n) {
+        background-color: lightgray;
+      }
+      tr:hover {
+        background-color: gray;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dome">
+      <table class="bordered">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>IMBD Top 10 movies</th>
+            <th>Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>I</td>
+            <td>The Shawshamk Redemption</td>
+            <td>1994</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>The Godfather</td>
+            <td>1972</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>The Godfather:part 11</td>
+            <td>1974</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>The good,the Bad and the Ugly</td>
+            <td>1966</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="height: 50px"></p>
+      <table class="zebra">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>IMBD Top 10 movies</th>
+            <th>Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>I</td>
+            <td>The Shawshamk Redemption</td>
+            <td>1994</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>The Godfather</td>
+            <td>1972</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>The Godfather:part 11</td>
+            <td>1974</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>The good,the Bad and the Ugly</td>
+            <td>1966</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="height: 50px"></p>
+    </div>
+  </body>
+</html>

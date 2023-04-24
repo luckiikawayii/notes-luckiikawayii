@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .con {
+        width: 400px;
+        height: 50px;
+        border-radius: 10px;
+        color: white;
+        background-color: blue;
+      }
+      .con a {
+        text-decoration: none;
+        width: 400px;
+        border-radius: 10px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        color: white;
+      }
+      a:hover {
+        color: antiquewhite;
+        background-color: aquamarine;
+      }
+      a:active {
+        color: gray;
+        background-color: aliceblue;
+      }
+      .menu {
+        width: 500px;
+        margin: 40px auto;
+      }
+      .brand,
+      .promotion,
+      .event {
+        background-color: gray;
+      }
+      .menu a {
+        background-color: gray;
+        display: block;
+      }
+      p {
+        display: none;
+      }
+      div:target p {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="con">
+      <a href="http://www.baidu.com">view project on github</a>
+    </div>
+    <div class="menu">
+      <div class="brand" id="brand">
+        <h2><a href="#brand">brand</a></h2>
+        <p>111111111111111</p>
+      </div>
+      <div class="promotion" id="promotion">
+        <h2><a href="#promotion">promotion</a></h2>
+        <p>22222222222222222</p>
+      </div>
+      <div class="event" id="event">
+        <h2><a href="#event">event</a></h2>
+        <p>3333333333333333</p>
+      </div>
+    </div>
+  </body>
+</html>

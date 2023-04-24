@@ -5,7 +5,9 @@
 -  选择器：nth-child(even) 选择所有偶数
 -  选择器：nth-child(odd) 选择所有奇数
 -  选择器：nth-child(n) 全选  2n=偶数 2n+1=奇数 n+5=从第五个开始 -5+n=前五个
-- 2.first-of-type指定类型的第一个 last-of-type指定类型的最后一个 nth-of-type(n)指定类型的第n个
+- 2.first-of-type指定类型的第一个; 
+-  last-of-type指定类型的最后一个; 
+-   nth-of-type(n)指定类型的第n个; 
 - 不同：1会把所有子元素排序，再去看第一个子元素
        2先看元素，再排列顺序
 

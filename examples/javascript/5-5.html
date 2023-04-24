@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function Person() {
+        this.firstName;
+        this.lastName;
+        this.age;
+        this.gender;
+      }
+      Person.prototype.eat = function () {
+        document.write(" eating....." + "<br/>");
+      };
+      Person.prototype.sleep = function () {
+        document.write(" sleepping......" + "<br/>");
+      };
+      function Employee() {
+        let _company_;
+        let _salary_;
+        function _get_company_() {
+          return _company_;
+        }
+        this.__defineGetter__("_company_", _get_company_);
+
+        function _get_salary_() {
+          return _salary_;
+        }
+        this.__defineGetter__("_salary_", _get_salary_);
+
+        function _set_company_(com) {
+          _company_ = com;
+        }
+        this.__defineSetter__("_company_", _set_company_);
+
+        function _set_salary_(sal) {
+          _salary_ = sal;
+        }
+        this.__defineSetter__("_salary_", _set_salary_);
+
+        this.work = function () {
+          document.write(
+            this.lastName +
+              this.firstName +
+              " 工作：" +
+              this._company_ +
+              " 月薪： " +
+              this._salary_ +
+              " 年龄：" +
+              this.age +
+              " 岁" +
+              " 性别： " +
+              this.gender +
+              "<br/>"
+          );
+        };
+      }
+      Employee.prototype = new Person();
+      // class Employee extends Person {
+      //   speak() {
+      //     super.speak();
+      //   }
+      // }
+      let e1 = new Employee();
+      e1.firstName = "芷漪";
+      e1.lastName = "金";
+      e1.age = 19;
+      e1.gender = "女";
+      e1._company_ = "无";
+      e1._salary_ = "无";
+      e1.eat();
+      e1.sleep();
+      e1.work();
+
+      for (let p in e1) {
+        document.write("e1的属性【 " + p + " 】的值为: " + e1[p] + "<br/>");
+      }
+      let e2 = new Employee();
+      e2.firstName = "三";
+      e2.lastName = "张";
+      e2.age = 28;
+      e2.gender = "男";
+      e2._company_ = "华为";
+      e2._salary_ = 122000;
+      e2.eat();
+      e2.sleep();
+      e2.work();
+
+      for (let p in e2) {
+        document.write("e2的属性【 " + p + " 】的值为: " + e2[p] + "<br/>");
+      }
+      let e3 = new Employee();
+      e3.firstName = "四";
+      e3.lastName = "李";
+      e3.age = 29;
+      e3.gender = "男";
+      e3._company_ = "百度";
+      e3._salary_ = 124000;
+      e3.eat();
+      e3.sleep();
+      e3.work();
+
+      for (let p in e3) {
+        document.write("e3的属性【 " + p + " 】的值为: " + e3[p] + "<br/>");
+      }
+    </script>
+  </body>
+</html>

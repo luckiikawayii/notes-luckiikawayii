@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+</head>
+<body>
+    <script>
+        // 初始化闹钟时间
+        var endTime = new Date();
+        // 初始化定时器id
+        var intercalid = 1;
+        // 获取闹钟时间
+        function getTime(){
+            let t = prompt('请按照[年，月，日，小时，分，秒]输入时间：2023，4，12，11，7，0');
+            let timeArr=t.split(",");
+            let numArr = new Array;
+            for (let x = 0;x<timeArr.length;x++){
+                numArr[x] = Number(timeArr[x]);
+            }
+            var inTime = new Date(numArr[0],numArr[1]-1,numArr[2],numArr[3],numArr[4],numArr[5]);
+            return inTime;
+    }
+        // 判断闹钟时间是否已到
+        function alarmClock(endTime){
+            var nTime = new Date();
+            if(nTime>=endTime){
+            alert("时间已到!" + nTime.toLocaleDateString()+nTime.toLocaleTimeString());
+            console.log("nTime="+nTime);
+            console.log("endTime="+endTime);
+            window.clearInterval(intercalid2);
+            return;
+            }else{
+            var c=document.getElementById('clock');
+            c.innerHTML = "现在的时间是" + nTime.toString();
+        }
+        }
+        function startAlarm(){
+            endTime = getTime();
+            var c = document.getElementById('alarm_clock');
+            c.innerHTML = "闹钟的时间是："+endTime.toString();
+            intercalid2 = window.setInterval('alarmClock(endTime)',50);
+        }
+       
+    </script>
+    <input type="button" value="设置闹钟" onclick="startAlarm()"><br>
+    <span id="alarm_clock"></span><br>
+    <span id="clock"></span>
+</body>
+</html>

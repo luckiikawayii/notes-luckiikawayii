@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 150px;
+        height: 50px;
+        background-color: green;
+        float: left;
+        margin: 30px;
+      }
+      div:nth-child(2) {
+        transform: rotate(30deg);
+        transform-origin: left;
+      }
+      div:nth-child(3) {
+        transform: skew(30deg);
+      }
+
+      div:nth-child(4):hover {
+        transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        transform: skewX(10deg);
+      }
+      div:nth-child(5) {
+        transform: skewY(10deg);
+      }
+      div:nth-child(6) {
+        transform: scale(0.8);
+      }
+      div:nth-child(7) {
+        transform: scaleX(0.8);
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <div></div>
+  </body>
+</html>

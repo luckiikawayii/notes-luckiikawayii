@@ -15,3 +15,8 @@ create table tb_class(
     -> cdept varchar(10) default "计算机与工程信息学院",
     -> aname varchar(10) not null,
     -> atel char(11));
+    取消主键： alter table 表名 drop primary key;
+    修改数据库长度：alter table 表名
+    modify column 项目
+    varchar(长度);
+              

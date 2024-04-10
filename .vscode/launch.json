@@ -3,14 +3,22 @@
   "configurations": [
     {
       "name": "C/C++ Runner: Debug Session",
-      "type": "lldb",
+      "type": "cppdbg",
       "request": "launch",
       "args": [],
-      "stopAtEntry": true,
-      "externalConsole": true,
-      "cwd": "/Users/jinzhiyi/luckiikawayii/repo/notes-luckiikawayii",
-      "program": "/Users/jinzhiyi/luckiikawayii/repo/notes-luckiikawayii/build/Debug/outDebug",
-      "MIMode": "gdb"
+      "stopAtEntry": false,
+      "externalConsole": false,
+      "cwd": "/Users/jinzhiyi/luckiikawayii/repo/notes-luckiikawayii/examples/c++",
+      "program": "/Users/jinzhiyi/luckiikawayii/repo/notes-luckiikawayii/examples/c++/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
     }
   ]
 }

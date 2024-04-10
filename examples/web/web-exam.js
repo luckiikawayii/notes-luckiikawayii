@@ -151,7 +151,7 @@ window.addEventListener('load', function() {
             btn.style.display = 'none';
             video.play();
         }
-})	
+
 
 // var focus = document.getElementsByClassName("focus");
 			// var speed = 3000;//切换时间
@@ -161,3 +161,4 @@ window.addEventListener('load', function() {
 			// 	focus.style.left = (++index) % 4 * -600 + "px";
 			// 	// 把600改为想要显示的宽度
 			// }, speed;
+        })	
